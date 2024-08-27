@@ -2,6 +2,12 @@ package application.service;
 
 import org.springframework.steretype.Service;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.JWTCreationException;
+
+import application.model.Usuario;
+
 @Service
 public class TokenService{
     private String secret = "1234567";
